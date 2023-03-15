@@ -1,0 +1,277 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  width: calc(100% - 20px);
+  height: 60px;
+  align-items: flex-start;
+  /* background-color: ; */
+  padding: 10px;
+}
+
+.name1 {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.profile_container {
+  width: 91%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_img_wrapper {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border-radius: 900px;
+  margin-right: 40px;
+  background-image: url("./9.jpg");
+  background-size: cover;
+}
+.profile_wrapper {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_info {
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 15px;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 12px;
+}
+
+.button_container {
+  width: 100%;
+  margin-left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Follow {
+  color: aliceblue;
+}
+
+.Share {
+  color: rgb(0, 30, 55);
+}
+
+.button1 {
+  background-color: rgb(0, 106, 255);
+  width: 90%;
+  height: 25px;
+
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.button2 {
+  background-color: rgb(211, 211, 211);
+  width: 90%;
+  height: 25px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.button3 {
+  background-color: rgb(211, 211, 211);
+  width: 30%;
+  height: 25px;
+  border-radius: 10px;
+  margin: 0px;
+  align-self: center;
+}
+
+.person {
+  margin-left: 13px;
+}
+
+.story-container {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+}
+
+.story {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px black solid;
+  border-style: ridge;
+  background-size: cover;
+}
+.s1 {
+  background-image: url("./8.jpg");
+}
+.s2 {
+  background-image: url("./9.jpg");
+}
+.s3 {
+  background-image: url("./2.jpg");
+}
+.s4 {
+  background-image: url("./5.jpg");
+}
+.s5 {
+  background-image: url("./3.jpg");
+}
+
+.story-captions-container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  font-size: smaller;
+}
+
+.icon-container {
+  position: absolute;
+  top: 109%;
+  left: 0px;
+  width: 100%;
+  height: 45px;
+  margin: 0%;
+  background-color: rgb(255, 255, 255);
+}
+
+.icon-wrapper {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.table {
+  width: 30px;
+  margin: 0px;
+}
+
+.video {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.instagram {
+  width: 30px;
+  color: grey;
+}
+
+.image_container {
+  margin: 0 auto;
+  position: absolute;
+  top: 120%;
+  left: 0px;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_wrapper {
+  width: 145px;
+  height: 145px;
+  border: 0.5px solid rgb(255, 255, 255);
+  background-size: cover;
+}
+
+.w0 {
+  background-image: url("./0.jpg");
+}
+
+.w1 {
+  background-image: url("./1.jpg");
+}
+
+.w2 {
+  background-image: url("./2.jpg");
+}
+
+.w3 {
+  background-image: url("./3.jpg");
+}
+
+.w4 {
+  background-image: url("./4.jpg");
+}
+
+.w5 {
+  background-image: url("./5.jpg");
+}
+
+.w6 {
+  background-image: url("./6.jpg");
+}
+
+.w7 {
+  background-image: url("./7.jpg");
+}
+
+.w8 {
+  background-image: url("./8.jpg");
+}
+
+.bottom1 {
+  position: absolute;
+  z-index: 5;
+  top: 240%;
+  left: 0px;
+  width: 100%;
+  height: 45px;
+  padding-left: 0px;
+  margin-top: 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+.bottom_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home {
+  width: 40px;
+}
+.search {
+  width: 40px;
+}
+.plus {
+  width: 40px;
+}
+.movie {
+  width: 40px;
+}
+.picture {
+  width: 40px;
+  border-radius: 30px;
+}
