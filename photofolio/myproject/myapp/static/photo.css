@@ -1,0 +1,25 @@
+body {
+  width: 80%;
+  background-color:black;
+}
+
+h1 {
+
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 300%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h3 {
+
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+.toss{
+    position: absolute;
+    right: 5%;
+    width: 20%;
+}
