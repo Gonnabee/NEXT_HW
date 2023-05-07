@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'list.css' %}">
+  </head>
+  <body>
+    <h2 style = 'font-size: 50px; color: pink;'>BLOG</h2>
+    <br>
+    <br>
+    <div class="category">
+
+        <span class="category">카테고리</span>
+        <ul class="ul">
+         
+          <li><a href="{% url 'list' %}">전체보기</a></li>    
+            {% for category in categorys %}
+
+            <li><a href="{% url 'detail' category %}">{{ category }}</a></li>
+            
+            {% endfor %}
+        </ul>
+    </div>
+
+    
+
+    
+
+
+
+    <a class="go" href="{% url 'new' %}">글 쓰러 가기</a>
+  </body>
+</html>
+
+
