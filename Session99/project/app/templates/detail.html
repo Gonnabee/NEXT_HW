@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    {% load utils %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'detail.css' %}?after"
+    />
+  </head>
+  <body>
+<div class="container">
+    <div>
+    <h5>배움은 훔쳐먹는 거래요. 이번 과제도 야금야금 먹어봅시다!</h5>
+      <h2>제목</h2>
+      <p>{{ post.title }}</p>
+    </div>
+    <div>
+      <h2>세부 사항</h2>
+      <p>{{ post.content }}</p>
+    </div>
+    <div>
+      <h2>기한</h2>
+      <p>{{ post.deadline }}</p>
+    </div>
+    <a href="{%	url 'home'	%}">홈으로</a>
+    <a href="{%	url 'update'	post.pk %}">수정하기</a>
+    <a href="{%	url 'delete'	post.pk %}">삭제하기</a>
+</div>   
+</body>
+</html>

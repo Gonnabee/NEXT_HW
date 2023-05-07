@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    {% load utils %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'new.css' %}?after"
+    />
+  </head>
+  <body>
+
+
+    <form action="" method="post">
+      {% csrf_token %}
+      <div>
+        <label for="title">무엇을 해치워야 하나요?</label>
+        <input type="text" id="title" name="title" value="{{post.title }}" />
+      </div>
+      <div>
+        <label for="content">잘게 잘게 쪼개보세요!</label>
+        <textarea name="content" id="content" cols="30" rows="10"> {{	post.content }}</textarea>
+        >
+      </div>
+      <div>
+        <label for="deadline">미리미리 하기!</label>
+        <input
+          type="date"
+          id="deadline"
+          name="deadline"
+          value="{{post.deadline}}"
+        />
+      </div>
+      <button type="submit">바꾸기</button>
+    </form>
+
+
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl0iK9FjZaRuUyquAl4QIEaZBk6QHPqi0PbLFjAUVO0IMN_LNFl_acksm8Q1R64XAuoxA&usqp=CAU');
+    color: #222;
+  }
+  
+  
+  /* Container */
+  .contents {
+    max-width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  /* Title */
+  .title2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .title2 h1 {
+    font-size: 2.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#5234ff;
+
+  }
+  .title2 h4 {
+    font-size: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#5f4ccb;
+
+  }
+  
+  
+  /* Contents */
+  .contents2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-top: 80px;
+    padding-bottom: 23px;
+    font-weight: bold;
+    color: #5517ff;
+    text-align: center;
+    border:1
+    
+  }
+  
+  /* List */
+  ul {
+    list-style-type: none;
+  }
+  
+  .bodycontent {
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12), 0 1px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .bodycontent:hover {
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-image:linear-gradient(to right, #dcd5ff, #c8ceff);
+
+}
+  
+  .bodycontent a {
+    text-decoration: none;
+    color: #4c2dff;
+    font-size: 1em;
+    font-weight: 800;
+  }
+  
+  .deadline, .dayleft, .content {
+    font-size: 0.8em;
+    
+  }
+  
+ /* Write Button */
+.write {
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    padding: 12px 24px;
+    margin-top: 20px;
+    color: #ffffff;
+    width: 460px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-image 0.3s;
+  }
+  
+  .write:hover {
+    background-image: linear-gradient(to right, #cfe2ff, #d6bfff);
+  }
+  
+  
