@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<div class="background">
+    <div class="header">
+               <h1><a href="{% url 'home' %}">Life was like a box of chocolates. You never know what you're gonna get.</a></h1>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <div class="profile flex">
+                <span id="user_nm">혜인이의 블로그</span>
+                <span>hanny1126</span>
+            </div>
+            <div class="category">
+                <span>카테고리</span>
+                <ul>
+                    <li><a href="{% url 'home' %}">전체보기({{count}})</a></li>    
+                    {% for category in categorys %}
+                    <li><a href="{% url 'detail' category %}">{{ category }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a class="button flex" href="{% url 'create' %}">글쓰기</a>
+        </div>
+        <div class="content">
+            <span class="count">글 개수 ({{count}})</span>
+            <ul>
+                {% for article in articles %}
+                <li>
+                    <h3><a href="{% url 'comment' article.id %}">{{ article.title }}</a></h3>
+                    <span>{{ article.date }}</span>
+                    <h6>{{ article.category }}</h6>
+                    <p>{{ article.content }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class = rightbar>
+            <div class="word">
+                <span>Favorite Songs</span>
+                
+            </div>
+
+            <a class="button1" href="https://www.youtube.com/watch?v=syFZfO_wfMQ">Night Changes</a>
+            <p></p>
+            <a class="button2" href="https://www.youtube.com/watch?v=nSDgHBxUbVQ">Photograph</a>
+            <p></p>
+            <a class="button1" href="https://www.youtube.com/watch?v=PrnqPJZR_XQ">Thinking Out Loud</a>
+            <p></p>
+            <a class="button2" href="https://www.youtube.com/watch?v=-l0hoLosHs0">Walk with me</a>
+            <p></p>
+            <a class="button1" href="https://www.youtube.com/watch?v=GKevHTbVsbQ">Both Sides Now</a>
+            <p></p>
+            <a class="button2" href="https://www.youtube.com/watch?v=He5NctQPXK8">Tightrope</a>
+            <p></p>
+            <a class="button1" href="https://www.youtube.com/watch?v=nkqVm5aiC28">All of the Stars</a>
+            <p></p>
+            <a class="button2" href="https://www.youtube.com/watch?v=K0ibBPhiaG0">Castle on the hills</a>
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}

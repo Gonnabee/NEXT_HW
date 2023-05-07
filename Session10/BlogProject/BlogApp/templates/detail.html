@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="background">
+    <div class="header">
+       </div>
+        
+    <div class="main">
+        <div class="sidebar">
+            <div class="profile flex">
+                <span id="user_nm">혜인</span>
+                <span>hanny1126</span>
+            </div>
+            <div class="category">
+                <span>카테고리</span>
+                <ul>
+                    <li><a href="{% url 'home' %}">전체보기({{ all_count }})</a></li>    
+                    {% for category in categorys %}
+                    <li><a href="{% url 'detail' category %}">{{ category }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a class="button flex" href="{% url 'create' %}">글쓰기</a>
+        </div>
+        <div class="content">
+            <span class="count">글 개수 ({{ count }})</span>
+            <ul>
+                {% for article in articles %}
+                <li>
+                    <h3><a href="{% url 'comment' article.id %}">{{ article.title }}</a></h3>
+                    <span>{{ article.date }}</span>
+                    <p1>{{ article.category }}</p1>
+                    <p>{{ article.content }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
